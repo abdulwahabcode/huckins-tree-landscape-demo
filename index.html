@@ -3,108 +3,106 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LJ Lawn Care | Lawn Care in West Salem, WI</title>
-<meta name="description" content="LJ Lawn Care — mowing, edging, fertilization and seasonal cleanups in West Salem, WI. Free estimates, reliable weekly service.">
+<title>Huckins Tree & Landscape | Tree Service in Alton, NH</title>
+<meta name="description" content="Huckins Tree & Landscape — professional tree removal, trimming, and storm cleanup serving Alton, NH and the Lakes Region. Free estimates.">
 <style>
 :root{
-  --ivory:#F4F1EC; --sage:#8FAF9B; --sage-deep:#5E7D68; --gold:#C2A46D;
-  --blue:#5F7C8A; --char:#2F2F2F; --white:#FBFAF6; --line:#DCD6C8;
-  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --deep:#102A24; --alt:#0D231C; --mid:#2F5D50; --brass:#9E8B5A;
+  --cream:#EFE6D6; --sand:#E3D7BE; --ink:#2C3833; --off:#F6F2E8;
+  --serif:Georgia,'Times New Roman',serif; --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:var(--sans);color:var(--char);background:var(--ivory);line-height:1.65;overflow-x:hidden}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.6;overflow-x:hidden}
+img,svg{max-width:100%}
+a{color:inherit}
 
-/* NAV — soft white bar */
-nav{position:sticky;top:0;z-index:50;background:rgba(251,250,246,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.nav-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:.8rem 1.1rem}
-.brand{text-decoration:none;color:var(--char);font-weight:800;font-size:1.12rem;letter-spacing:.02em}
-.brand b{color:var(--sage-deep)}
-.brand small{display:block;font-weight:400;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--blue)}
-.links{display:none;gap:1.5rem;list-style:none}
-.links a{text-decoration:none;font-size:.84rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--char)}
-.links a:hover{color:var(--sage-deep)}
-.nav-cta{background:var(--sage-deep);color:#fff;text-decoration:none;font-weight:700;font-size:.82rem;padding:.6rem 1.15rem;border-radius:999px;letter-spacing:.04em}
-.menu-btn{background:none;border:0;font-size:1.5rem;cursor:pointer;display:block;color:var(--char)}
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:rgba(16,42,36,.96);backdrop-filter:blur(6px);color:var(--off)}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:.85rem 1.1rem}
+.brand{font-family:var(--serif);font-size:1.15rem;letter-spacing:.04em;color:var(--off);text-decoration:none}
+.brand small{display:block;font-family:var(--sans);font-size:.62rem;letter-spacing:.28em;color:var(--brass);text-transform:uppercase}
+.links{display:none;gap:1.6rem;list-style:none}
+.links a{text-decoration:none;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:#D9D2BE}
+.links a:hover{color:var(--brass)}
+.nav-cta{background:var(--brass);color:#14211D !important;text-decoration:none;font-weight:700;font-size:.82rem;letter-spacing:.06em;padding:.6rem 1.1rem;border-radius:2px;text-transform:uppercase}
+.menu-btn{background:none;border:0;color:var(--off);font-size:1.5rem;cursor:pointer;display:block}
 @media(min-width:860px){.links{display:flex}.menu-btn{display:none}}
-.mobile-menu{display:none;border-top:1px solid var(--line);padding:.3rem 1.1rem .9rem;background:var(--white)}
+.mobile-menu{display:none;background:var(--alt);padding:.4rem 1.1rem 1.1rem}
 .mobile-menu.open{display:block}
-.mobile-menu a{display:block;text-decoration:none;color:var(--char);padding:.6rem 0;border-bottom:1px solid var(--line);font-size:.88rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.mobile-menu a{display:block;color:var(--off);text-decoration:none;padding:.65rem 0;border-bottom:1px solid rgba(239,230,214,.12);font-size:.9rem;letter-spacing:.06em;text-transform:uppercase}
 
-/* HERO — lawn stripes */
-.hero{position:relative;background:linear-gradient(180deg,var(--ivory) 0%,#ECEAE2 100%);overflow:hidden}
-.stripes{position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 90px,rgba(143,175,155,.10) 90px 180px);pointer-events:none}
-.hero-inner{position:relative;max-width:1080px;margin:0 auto;padding:4rem 1.2rem 3.4rem;text-align:center}
-.pill{display:inline-block;background:#fff;border:1px solid var(--line);color:var(--sage-deep);font-size:.72rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;padding:.5rem 1.1rem;border-radius:999px;margin-bottom:1.2rem}
-.hero h1{font-size:clamp(2.1rem,8vw,3.6rem);font-weight:800;line-height:1.1;letter-spacing:-.01em;margin-bottom:1rem}
-.hero h1 .green{color:var(--sage-deep)}
-.hero p.lede{max-width:36rem;margin:0 auto 2rem;color:#6B6B62;font-size:1.02rem}
-.cta-row{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center}
-.btn{display:inline-block;text-decoration:none;font-weight:700;padding:.95rem 1.9rem;border-radius:999px;font-size:.95rem;letter-spacing:.03em}
-.btn-green{background:var(--sage-deep);color:#fff}
-.btn-gold{background:var(--gold);color:#3A2E18}
-.hero-stats{display:flex;flex-wrap:wrap;justify-content:center;gap:2.2rem;margin-top:2.4rem}
-.hstat{text-align:center}
-.hstat b{display:block;font-size:1.5rem;color:var(--sage-deep)}
-.hstat span{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:#8A8A80}
+/* HERO — editorial forest */
+.hero{background:var(--deep);color:var(--off);position:relative;overflow:hidden}
+.hero-canopy{position:absolute;inset:0;opacity:.5}
+.hero-inner{position:relative;max-width:1100px;margin:0 auto;padding:4.2rem 1.2rem 4.6rem}
+.kicker{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--brass);margin-bottom:1rem}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.2rem,8vw,3.9rem);line-height:1.08;margin-bottom:1rem;max-width:16ch}
+.hero h1 em{font-style:italic;color:var(--sand)}
+.hero p.lede{max-width:34rem;color:#D6CFB9;font-size:1.02rem;margin-bottom:2rem}
+.cta-row{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-block;text-decoration:none;font-weight:700;letter-spacing:.05em;padding:.95rem 1.8rem;border-radius:2px;font-size:.95rem}
+.btn-gold{background:var(--brass);color:#14211D}
+.btn-ghost{border:1px solid rgba(239,230,214,.45);color:var(--off)}
+.trust{display:flex;flex-wrap:wrap;gap:1.4rem;margin-top:2.2rem;font-size:.82rem;color:#BFB69E;letter-spacing:.04em}
+.trust span{display:flex;align-items:center;gap:.5rem}
+.dot{width:7px;height:7px;background:var(--brass);border-radius:50%;flex:none}
 
 /* SECTIONS */
-section{padding:3.4rem 1.2rem}
-.wrap{max-width:1080px;margin:0 auto}
-.sec-label{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem}
-h2.sec{font-size:clamp(1.7rem,5.5vw,2.4rem);font-weight:800;letter-spacing:-.01em;margin-bottom:.7rem}
-.sec-sub{max-width:42rem;color:#6B6B62;margin-bottom:2rem}
+section{padding:3.6rem 1.2rem}
+.wrap{max-width:1100px;margin:0 auto}
+.sec-label{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);margin-bottom:.6rem}
+h2.sec{font-family:var(--serif);font-weight:400;font-size:clamp(1.7rem,5.5vw,2.5rem);line-height:1.15;margin-bottom:.8rem;color:var(--deep)}
+.sec-sub{max-width:40rem;color:#5C6A62;margin-bottom:2.2rem}
 
-/* SERVICES — soft rounded tiles with leaf motif */
-.services{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.svc-grid{display:grid;gap:1.1rem;grid-template-columns:1fr}
-@media(min-width:620px){.svc-grid{grid-template-columns:1fr 1fr}}
-@media(min-width:980px){.svc-grid{grid-template-columns:1fr 1fr 1fr}}
-.card{background:var(--ivory);border:1px solid var(--line);border-radius:18px;padding:1.7rem 1.5rem;transition:transform .25s ease,box-shadow .25s ease}
-.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(95,124,138,.14)}
-.card .leaf{width:46px;height:46px;border-radius:50%;background:var(--sage);display:flex;align-items:center;justify-content:center;font-size:1.35rem;margin-bottom:1rem}
-.card h3{font-size:1.12rem;font-weight:800;margin-bottom:.45rem}
-.card p{font-size:.92rem;color:#6B6B62}
+/* SERVICES — offset editorial cards */
+.services{background:var(--cream)}
+.svc-grid{display:grid;gap:1.2rem;grid-template-columns:1fr}
+@media(min-width:640px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.svc-grid{grid-template-columns:1fr 1fr 1fr}}
+.card{background:var(--off);border-top:3px solid var(--brass);padding:1.7rem 1.5rem;border-radius:2px;box-shadow:0 8px 24px rgba(16,42,36,.08)}
+.card .num{font-family:var(--serif);font-size:.8rem;color:var(--brass);letter-spacing:.2em}
+.card h3{font-family:var(--serif);font-weight:400;font-size:1.3rem;color:var(--deep);margin:.4rem 0 .55rem}
+.card p{font-size:.93rem;color:#5C6A62}
 
-/* WHY — split with stat callout */
-.why-grid{display:grid;gap:2rem;grid-template-columns:1fr}
-@media(min-width:860px){.why-grid{grid-template-columns:1.2fr 1fr}}
-.why-list{list-style:none;margin-top:1.6rem}
-.why-list li{display:flex;gap:1rem;padding:1.1rem 0;border-bottom:1px dashed var(--line)}
-.why-list li:last-child{border-bottom:0}
-.check{flex:none;width:30px;height:30px;border-radius:50%;background:var(--sage);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
-.why-list h3{font-size:1rem;font-weight:800;margin-bottom:.25rem}
-.why-list p{font-size:.9rem;color:#6B6B62}
-.callout{background:var(--sage-deep);color:#fff;border-radius:20px;padding:2.2rem 1.8rem;position:relative;overflow:hidden}
-.callout::after{content:"❧";position:absolute;right:1.2rem;bottom:.4rem;font-size:5rem;opacity:.18}
-.callout h3{font-size:1.4rem;font-weight:800;margin-bottom:.6rem}
-.callout p{font-size:.94rem;color:#E4EDE6;margin-bottom:1.4rem}
-.callout .btn-gold{display:inline-block}
+/* WHY US — dark band, number column */
+.why{background:var(--alt);color:var(--off)}
+.why h2.sec{color:var(--off)}
+.why .sec-sub{color:#BFB69E}
+.why-grid{display:grid;gap:0;grid-template-columns:1fr;margin-top:2rem}
+@media(min-width:800px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+.why-item{padding:1.6rem 0;border-top:1px solid rgba(158,139,90,.35);display:flex;gap:1.1rem}
+.why-item:last-child{border-bottom:1px solid rgba(158,139,90,.35)}
+.why-item .n{font-family:var(--serif);color:var(--brass);font-size:1.4rem;flex:none;width:2.6rem}
+.why-item h3{font-size:1.05rem;margin-bottom:.35rem;letter-spacing:.02em}
+.why-item p{font-size:.92rem;color:#CFC7AE}
 
-/* AREA — town chips */
-.area{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}
-.area .sec-sub{margin-left:auto;margin-right:auto}
-.towns{display:flex;flex-wrap:wrap;gap:.65rem;justify-content:center;margin-top:1.6rem}
-.town{border:1.5px solid var(--sage);color:var(--sage-deep);padding:.55rem 1.15rem;border-radius:999px;font-size:.88rem;font-weight:600}
-.town.home{background:var(--sage-deep);color:#fff;border-color:var(--sage-deep)}
-.area-note{margin-top:1.3rem;font-size:.9rem;color:#8A8A80}
+/* SERVICE AREA — light map-style list */
+.area{background:var(--cream)}
+.towns{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.6rem}
+.town{background:var(--deep);color:var(--off);padding:.6rem 1.15rem;border-radius:999px;font-size:.88rem;letter-spacing:.03em}
+.town.home{background:var(--brass);color:#14211D;font-weight:700}
+.area-note{margin-top:1.4rem;font-size:.9rem;color:#5C6A62}
 
 /* CONTACT */
-.contact-grid{display:grid;gap:2rem;grid-template-columns:1fr}
-@media(min-width:860px){.contact-grid{grid-template-columns:1fr 1.1fr}}
-.info-card{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:1.8rem;margin-bottom:1.1rem}
-.info-card h4{font-size:.72rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--blue);margin-bottom:.3rem}
-.info-card a{color:var(--char);text-decoration:none;font-weight:700;font-size:1.02rem}
-.info-card p{color:#6B6B62;font-size:.95rem}
-form{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:1.8rem}
-label{display:block;font-size:.75rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin:.95rem 0 .35rem}
+.contact{background:var(--deep);color:var(--off)}
+.contact h2.sec{color:var(--off)}
+.contact .sec-sub{color:#BFB69E}
+.contact-grid{display:grid;gap:2.2rem;grid-template-columns:1fr}
+@media(min-width:860px){.contact-grid{grid-template-columns:1fr 1.15fr}}
+.info-row{display:flex;gap:1rem;align-items:flex-start;margin-bottom:1.3rem}
+.info-row .ic{width:40px;height:40px;flex:none;border:1px solid var(--brass);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--brass);font-size:1.05rem}
+.info-row h4{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);margin-bottom:.2rem}
+.info-row p,.info-row a{color:var(--off);text-decoration:none;font-size:1rem}
+form{background:rgba(239,230,214,.06);border:1px solid rgba(158,139,90,.4);padding:1.6rem;border-radius:3px}
+label{display:block;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#CFC7AE;margin:.9rem 0 .35rem}
 label:first-child{margin-top:0}
-input,textarea,select{width:100%;max-width:100%;padding:.78rem .9rem;border:1.5px solid var(--line);border-radius:12px;font-size:1rem;font-family:var(--sans);background:#fff;color:var(--char)}
+input,textarea,select{width:100%;max-width:100%;padding:.75rem .85rem;border:1px solid rgba(239,230,214,.3);background:rgba(16,42,36,.5);color:var(--off);border-radius:2px;font-size:1rem;font-family:var(--sans)}
 textarea{min-height:110px;resize:vertical}
-button.submit{margin-top:1.2rem;width:100%;background:var(--sage-deep);color:#fff;border:0;font-weight:800;letter-spacing:.05em;padding:1rem;font-size:.95rem;border-radius:999px;cursor:pointer}
-button.submit:hover{background:#4E6A58}
-footer{background:var(--char);color:#B9B4A6;padding:1.6rem 1.2rem;text-align:center;font-size:.82rem}
-.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
+button.submit{margin-top:1.2rem;width:100%;background:var(--brass);color:#14211D;border:0;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:1rem;font-size:.95rem;border-radius:2px;cursor:pointer}
+button.submit:hover{filter:brightness(1.08)}
+footer{border-top:1px solid rgba(158,139,90,.3);padding:1.6rem 1.2rem;text-align:center;font-size:.82rem;color:#8E967F;background:var(--deep)}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
 </style>
 </head>
@@ -112,14 +110,14 @@ footer{background:var(--char);color:#B9B4A6;padding:1.6rem 1.2rem;text-align:cen
 
 <nav>
   <div class="nav-inner">
-    <a class="brand" href="#top"><b>LJ</b> Lawn Care<small>West Salem · Wisconsin</small></a>
+    <a class="brand" href="#top">Huckins Tree &amp; Landscape<small>Alton · New Hampshire</small></a>
     <ul class="links">
       <li><a href="#services">Services</a></li>
       <li><a href="#why">Why Us</a></li>
       <li><a href="#area">Service Area</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a class="nav-cta" href="#contact">Free Estimate</a>
+    <a class="nav-cta" href="#contact">Free Quote</a>
     <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('mmenu').classList.toggle('open')">☰</button>
   </div>
   <div class="mobile-menu" id="mmenu">
@@ -128,102 +126,107 @@ footer{background:var(--char);color:#B9B4A6;padding:1.6rem 1.2rem;text-align:cen
 </nav>
 
 <header class="hero" id="top">
-  <div class="stripes" aria-hidden="true"></div>
+  <svg class="hero-canopy" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <rect width="1200" height="420" fill="#0D231C"/>
+    <g fill="#16382C">
+      <ellipse cx="120" cy="120" rx="150" ry="90"/><ellipse cx="420" cy="70" rx="190" ry="100"/>
+      <ellipse cx="760" cy="140" rx="170" ry="95"/><ellipse cx="1060" cy="80" rx="180" ry="100"/>
+    </g>
+    <g fill="#1D4434">
+      <ellipse cx="260" cy="200" rx="120" ry="70"/><ellipse cx="620" cy="230" rx="150" ry="80"/><ellipse cx="950" cy="210" rx="130" ry="75"/>
+    </g>
+    <g stroke="#9E8B5A" stroke-width="2" opacity=".55">
+      <line x1="120" y1="200" x2="120" y2="420"/><line x1="420" y1="160" x2="420" y2="420"/>
+      <line x1="760" y1="220" x2="760" y2="420"/><line x1="1060" y1="170" x2="1060" y2="420"/>
+    </g>
+  </svg>
   <div class="hero-inner">
-    <span class="pill">Lawn Care · West Salem, WI</span>
-    <h1>A lawn you'll be <span class="green">proud to come home to.</span></h1>
-    <p class="lede">LJ Lawn Care keeps West Salem yards sharp — crisp edges, even cuts, and honest seasonal care, on a schedule you can count on.</p>
+    <div class="kicker">Tree Service · Alton, New Hampshire</div>
+    <h1>Trees handled with <em>real craftsmanship</em> — from canopy to stump.</h1>
+    <p class="lede">Huckins Tree &amp; Landscape keeps New Hampshire properties safe, clean, and beautiful — careful removals, expert trimming, and storm cleanup done right the first time.</p>
     <div class="cta-row">
-      <a class="btn btn-green" href="#contact">Get a Free Estimate</a>
-      <a class="btn btn-gold" href="mailto:services.ljlawncare@gmail.com">Email Us</a>
+      <a class="btn btn-gold" href="#contact">Get a Free Quote</a>
+      <a class="btn btn-ghost" href="mailto:huckinstreeandlandscape@gmail.com">Email Us</a>
     </div>
-    <div class="hero-stats">
-      <div class="hstat"><b>Free</b><span>Estimates</span></div>
-      <div class="hstat"><b>Weekly</b><span>Mowing Plans</span></div>
-      <div class="hstat"><b>Local</b><span>West Salem Based</span></div>
+    <div class="trust">
+      <span><span class="dot"></span>Free on-site estimates</span>
+      <span><span class="dot"></span>Fully insured crew</span>
+      <span><span class="dot"></span>Lakes Region local</span>
     </div>
   </div>
 </header>
 
 <section class="services" id="services">
   <div class="wrap">
-    <span class="sec-label reveal">What we do</span>
-    <h2 class="sec reveal">Lawn Services</h2>
-    <p class="sec-sub reveal">One visit or all season long — every service includes a full cleanup so your yard is ready to enjoy the moment we leave.</p>
+    <div class="sec-label reveal">What we do</div>
+    <h2 class="sec reveal">Tree Services</h2>
+    <p class="sec-sub reveal">Every job starts with a walk-through of your property and an honest, written estimate — no pressure, no surprises.</p>
     <div class="svc-grid">
-      <div class="card reveal"><div class="leaf">🌱</div><h3>Weekly &amp; Bi-Weekly Mowing</h3><p>Consistent cuts at the right height for Wisconsin grass — bagged or mulched, with clippings never left behind.</p></div>
-      <div class="card reveal"><div class="leaf">✂</div><h3>Edging &amp; Trimming</h3><p>Crisp lines along sidewalks, driveways, and beds. The detail work that makes a good mow look great.</p></div>
-      <div class="card reveal"><div class="leaf">🌿</div><h3>Fertilization &amp; Weed Control</h3><p>Seasonally timed treatments that feed your lawn and crowd out dandelions and crabgrass — thick, green, and even.</p></div>
-      <div class="card reveal"><div class="leaf">🍂</div><h3>Spring &amp; Fall Cleanups</h3><p>Leaf removal, stick pickup, and bed cleanup that resets your yard after winter and before it — ready for the next season.</p></div>
-      <div class="card reveal"><div class="leaf">🌾</div><h3>Overseeding &amp; Aeration</h3><p>Core aeration and overseeding in early fall to thicken thin spots and give tired lawns a fresh start.</p></div>
-      <div class="card reveal"><div class="leaf">❄</div><h3>Shrub &amp; Bed Touch-Ups</h3><p>Light shrub trimming and mulch bed tidying to keep the whole front of your home looking cared for.</p></div>
+      <div class="card reveal"><div class="num">01</div><h3>Tree Removal</h3><p>Safe, controlled removal of dead, diseased, or storm-damaged trees — including tight spots near homes, wires, and driveways. We clean up like we were never there.</p></div>
+      <div class="card reveal"><div class="num">02</div><h3>Trimming &amp; Pruning</h3><p>Proper cuts that keep trees healthy and shapely — clearing branches from roofs, gutters, and power lines while opening up light and views.</p></div>
+      <div class="card reveal"><div class="num">03</div><h3>Storm Damage Cleanup</h3><p>Fast response after New Hampshire storms: downed limbs removed, tangled canopies untangled, and hazardous hangers cut down before they fall.</p></div>
+      <div class="card reveal"><div class="num">04</div><h3>Stump Grinding</h3><p>Old stumps ground down below grade so you can mow, plant, or seed right over them — chips raked out and hauled away.</p></div>
+      <div class="card reveal"><div class="num">05</div><h3>Land &amp; Lot Clearing</h3><p>From overgrown edges to full building lots — brush, saplings, and unwanted trees cleared to give you back usable land.</p></div>
+      <div class="card reveal"><div class="num">06</div><h3>Seasonal Tree Care</h3><p>Winter pruning, ice-damage checks, and cabling for at-risk limbs — year-round care that keeps your trees standing strong through every season.</p></div>
     </div>
   </div>
 </section>
 
 <section class="why" id="why">
   <div class="wrap">
+    <div class="sec-label reveal">Why Huckins</div>
+    <h2 class="sec reveal">The crew neighbors recommend</h2>
+    <p class="sec-sub reveal">Big enough to handle the dangerous work, small enough to treat your yard like our own.</p>
     <div class="why-grid">
-      <div>
-        <span class="sec-label reveal">Why LJ</span>
-        <h2 class="sec reveal">The dependable crew for your yard</h2>
-        <ul class="why-list">
-          <li class="reveal"><span class="check">✓</span><div><h3>Same day, every week</h3><p>Your mowing day stays your mowing day. No chasing, no guessing — we show up when we say we will.</p></div></li>
-          <li class="reveal"><span class="check">✓</span><div><h3>Cleanup included, always</h3><p>Driveways blown off, clippings handled, gates latched. We treat your property like it's our own block.</p></div></li>
-          <li class="reveal"><span class="check">✓</span><div><h3>Honest, upfront pricing</h3><p>Free estimates with a flat rate before we start. No upsells, no surprise add-ons.</p></div></li>
-          <li class="reveal"><span class="check">✓</span><div><h3>True local, West Salem</h3><p>We know Coulee Region soil and weather — and we cut lawns here year after year, not just this season.</p></div></li>
-        </ul>
-      </div>
-      <div class="callout reveal">
-        <h3>One call, one crew, one less chore.</h3>
-        <p>Join the weekly route and stop thinking about your lawn. Free estimates, friendly service, and a yard your neighbors will notice.</p>
-        <a class="btn btn-gold" href="#contact">Start With a Free Estimate</a>
-      </div>
+      <div class="why-item reveal"><div class="n">i.</div><div><h3>Fully insured, safety first</h3><p>Every cut is planned and every job is covered — you never carry the risk when heavy limbs are involved.</p></div></div>
+      <div class="why-item reveal"><div class="n">ii.</div><div><h3>True Lakes Region local</h3><p>We know New Hampshire's pines, maples, and oaks — and how each one behaves in ice, wind, and wet soil.</p></div></div>
+      <div class="why-item reveal"><div class="n">iii.</div><div><h3>Honest, written estimates</h3><p>Free on-site quotes with a clear price before any saw starts. If a tree can be saved, we'll tell you that too.</p></div></div>
+      <div class="why-item reveal"><div class="n">iv.</div><div><h3>Complete cleanup, every time</h3><p>Branches chipped, wood stacked or hauled, lawn raked — we leave the yard cleaner than we found it.</p></div></div>
     </div>
   </div>
 </section>
 
 <section class="area" id="area">
   <div class="wrap">
-    <span class="sec-label reveal">Where we work</span>
+    <div class="sec-label reveal">Where we work</div>
     <h2 class="sec reveal">Service Area</h2>
-    <p class="sec-sub reveal">Based in West Salem, serving the La Crosse area and nearby communities.</p>
+    <p class="sec-sub reveal">Based in Alton, proudly serving the Lakes Region and surrounding towns.</p>
     <div class="towns reveal">
-      <span class="town home">West Salem</span><span class="town">La Crosse</span><span class="town">Onalaska</span><span class="town">Holmen</span><span class="town">Bangor</span><span class="town">Sparta</span><span class="town">Mindoro</span>
+      <span class="town home">Alton</span><span class="town">Wolfeboro</span><span class="town">Barnstead</span><span class="town">New Durham</span><span class="town">Rochester</span><span class="town">Farmington</span><span class="town">Gilford</span><span class="town">Gilmanton</span>
     </div>
-    <p class="area-note reveal">Outside these towns? Ask anyway — we add new routes when the schedule allows.</p>
+    <p class="area-note reveal">Just outside these towns? Call or email — if we can reach you, we'll come take a look.</p>
   </div>
 </section>
 
 <section class="contact" id="contact">
   <div class="wrap">
-    <span class="sec-label reveal">Get in touch</span>
-    <h2 class="sec reveal">Request a Free Estimate</h2>
-    <p class="sec-sub reveal">Tell us about your yard — we usually reply within one business day.</p>
+    <div class="sec-label reveal">Get in touch</div>
+    <h2 class="sec reveal">Request Your Free Estimate</h2>
+    <p class="sec-sub reveal">Tell us about your tree — we usually reply the same day.</p>
     <div class="contact-grid">
       <div class="reveal">
-        <div class="info-card"><h4>Email</h4><a href="mailto:services.ljlawncare@gmail.com">services.ljlawncare@gmail.com</a></div>
-        <div class="info-card"><h4>Based in</h4><p>West Salem, Wisconsin</p></div>
-        <div class="info-card"><h4>Hours</h4><p>Monday – Friday · 8:00 AM – 6:00 PM<br>Saturday · 9:00 AM – 2:00 PM</p></div>
+        <div class="info-row"><div class="ic">✉</div><div><h4>Email</h4><a href="mailto:huckinstreeandlandscape@gmail.com">huckinstreeandlandscape@gmail.com</a></div></div>
+        <div class="info-row"><div class="ic">◉</div><div><h4>Based in</h4><p>Alton, New Hampshire</p></div></div>
+        <div class="info-row"><div class="ic">◷</div><div><h4>Hours</h4><p>Monday – Saturday · 7:00 AM – 6:00 PM</p></div></div>
       </div>
       <form class="reveal" onsubmit="return sendQuote(this)">
-        <label for="n2">Your name</label><input id="n2" name="name" required>
-        <label for="p2">Phone</label><input id="p2" name="phone" type="tel">
-        <label for="s2">Service needed</label>
-        <select id="s2" name="service"><option>Weekly / Bi-Weekly Mowing</option><option>Edging &amp; Trimming</option><option>Fertilization &amp; Weed Control</option><option>Spring &amp; Fall Cleanup</option><option>Overseeding &amp; Aeration</option><option>Shrub &amp; Bed Touch-Ups</option></select>
-        <label for="m2">Tell us about your yard</label><textarea id="m2" name="message" placeholder="e.g. Corner lot, about half an acre, needs weekly mowing starting May…"></textarea>
-        <button class="submit" type="submit">Send Estimate Request</button>
+        <label for="n1">Your name</label><input id="n1" name="name" required>
+        <label for="p1">Phone</label><input id="p1" name="phone" type="tel">
+        <label for="s1">Service needed</label>
+        <select id="s1" name="service"><option>Tree Removal</option><option>Trimming &amp; Pruning</option><option>Storm Damage Cleanup</option><option>Stump Grinding</option><option>Land &amp; Lot Clearing</option><option>Seasonal Tree Care</option></select>
+        <label for="m1">Tell us about the job</label><textarea id="m1" name="message" placeholder="e.g. Large pine leaning toward the house after the last storm…"></textarea>
+        <button class="submit" type="submit">Send Quote Request</button>
       </form>
     </div>
   </div>
 </section>
 
-<footer>© 2026 LJ Lawn Care · West Salem, WI &nbsp;·&nbsp; Demo by Wahab Codes</footer>
+<footer>© 2026 Huckins Tree &amp; Landscape · Alton, NH &nbsp;·&nbsp; Demo by Wahab Codes</footer>
 
 <script>
 function sendQuote(f){
   var body='Name: '+f.name.value+'%0D%0APhone: '+f.phone.value+'%0D%0AService: '+f.service.value+'%0D%0ADetails: '+encodeURIComponent(f.message.value);
-  window.location.href='mailto:services.ljlawncare@gmail.com?subject=Free Estimate Request — '+encodeURIComponent(f.service.value)+'&body='+body;
+  window.location.href='mailto:huckinstreeandlandscape@gmail.com?subject=Free Quote Request — '+encodeURIComponent(f.service.value)+'&body='+body;
   return false;
 }
 var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{threshold:.12});
