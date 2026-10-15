@@ -3,110 +3,107 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dominican Power Barber Shop | Barber in Port Arthur, TX</title>
-<meta name="description" content="Dominican Power Barber Shop — sharp fades, classic cuts and hot-towel shaves in Port Arthur, TX. Walk-ins welcome. Call (409) 460-5339.">
+<title>LJ Lawn Care | Lawn Care in West Salem, WI</title>
+<meta name="description" content="LJ Lawn Care — mowing, edging, fertilization and seasonal cleanups in West Salem, WI. Free estimates, reliable weekly service.">
 <style>
 :root{
-  --esp:#2B1C10; --esp2:#3E2C1C; --olive:#7B5E3B; --tan:#C2A77D;
-  --parch:#EDE3CF; --cream:#F7F1E3; --wine:#5C2E2E; --ink:#241708;
+  --ivory:#F4F1EC; --sage:#8FAF9B; --sage-deep:#5E7D68; --gold:#C2A46D;
+  --blue:#5F7C8A; --char:#2F2F2F; --white:#FBFAF6; --line:#DCD6C8;
   --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:var(--sans);color:var(--ink);background:var(--parch);line-height:1.6;overflow-x:hidden}
+body{font-family:var(--sans);color:var(--char);background:var(--ivory);line-height:1.65;overflow-x:hidden}
 
-/* NAV — dark espresso bar with gold-rule */
-nav{position:sticky;top:0;z-index:50;background:var(--esp);border-bottom:3px solid var(--olive)}
-.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:.85rem 1.1rem}
-.brand{color:var(--cream);text-decoration:none;font-weight:900;letter-spacing:.06em;font-size:1.05rem;text-transform:uppercase}
-.brand small{display:block;font-size:.62rem;letter-spacing:.3em;color:var(--tan);font-weight:400}
-.links{display:none;gap:1.6rem;list-style:none}
-.links a{color:var(--parch);text-decoration:none;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
-.links a:hover{color:var(--tan)}
-.nav-cta{background:var(--olive);color:#fff;text-decoration:none;font-weight:800;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;padding:.65rem 1.2rem;border-radius:2px}
-.menu-btn{background:none;border:0;color:var(--cream);font-size:1.5rem;cursor:pointer;display:block}
+/* NAV — soft white bar */
+nav{position:sticky;top:0;z-index:50;background:rgba(251,250,246,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:.8rem 1.1rem}
+.brand{text-decoration:none;color:var(--char);font-weight:800;font-size:1.12rem;letter-spacing:.02em}
+.brand b{color:var(--sage-deep)}
+.brand small{display:block;font-weight:400;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--blue)}
+.links{display:none;gap:1.5rem;list-style:none}
+.links a{text-decoration:none;font-size:.84rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--char)}
+.links a:hover{color:var(--sage-deep)}
+.nav-cta{background:var(--sage-deep);color:#fff;text-decoration:none;font-weight:700;font-size:.82rem;padding:.6rem 1.15rem;border-radius:999px;letter-spacing:.04em}
+.menu-btn{background:none;border:0;font-size:1.5rem;cursor:pointer;display:block;color:var(--char)}
 @media(min-width:860px){.links{display:flex}.menu-btn{display:none}}
-.mobile-menu{display:none;background:var(--esp2);padding:.3rem 1.1rem .9rem}
+.mobile-menu{display:none;border-top:1px solid var(--line);padding:.3rem 1.1rem .9rem;background:var(--white)}
 .mobile-menu.open{display:block}
-.mobile-menu a{display:block;color:var(--cream);text-decoration:none;padding:.65rem 0;border-bottom:1px solid rgba(237,227,207,.15);font-size:.85rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.mobile-menu a{display:block;text-decoration:none;color:var(--char);padding:.6rem 0;border-bottom:1px solid var(--line);font-size:.88rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
 
-/* HERO — barbershop poster */
-.hero{background:var(--esp);color:var(--cream);position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent 0 26px,rgba(123,94,59,.12) 26px 30px)}
-.hero-inner{position:relative;max-width:1100px;margin:0 auto;padding:4rem 1.2rem 4.2rem}
-.badge-row{display:flex;align-items:center;gap:.9rem;margin-bottom:1.1rem}
-.pole{width:26px;height:74px;border-radius:13px;background:repeating-linear-gradient(-45deg,#B03A3A 0 10px,#F2E9D6 10px 20px,#2E5E8C 20px 30px,#F2E9D6 30px 40px);box-shadow:inset 0 0 0 3px var(--esp2);flex:none}
-.est{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--tan)}
-.hero h1{font-size:clamp(2.3rem,9vw,4.2rem);font-weight:900;text-transform:uppercase;line-height:1.02;letter-spacing:.01em;margin-bottom:1rem}
-.hero h1 .tan{color:var(--tan)}
-.hero p.lede{max-width:34rem;color:#D8CBB2;font-size:1.03rem;margin-bottom:2rem}
-.cta-row{display:flex;flex-wrap:wrap;gap:.8rem}
-.btn{display:inline-block;text-decoration:none;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:.95rem 1.9rem;border-radius:2px;font-size:.9rem}
-.btn-olive{background:var(--olive);color:#fff}
-.btn-outline{border:2px solid var(--tan);color:var(--cream)}
-.hours-strip{display:flex;flex-wrap:wrap;gap:2rem;margin-top:2.4rem;border-top:1px solid rgba(194,167,125,.4);padding-top:1.4rem}
-.hours-strip div{font-size:.85rem;color:#CBBFA4}
-.hours-strip b{display:block;color:var(--tan);font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;margin-bottom:.2rem}
+/* HERO — lawn stripes */
+.hero{position:relative;background:linear-gradient(180deg,var(--ivory) 0%,#ECEAE2 100%);overflow:hidden}
+.stripes{position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 90px,rgba(143,175,155,.10) 90px 180px);pointer-events:none}
+.hero-inner{position:relative;max-width:1080px;margin:0 auto;padding:4rem 1.2rem 3.4rem;text-align:center}
+.pill{display:inline-block;background:#fff;border:1px solid var(--line);color:var(--sage-deep);font-size:.72rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;padding:.5rem 1.1rem;border-radius:999px;margin-bottom:1.2rem}
+.hero h1{font-size:clamp(2.1rem,8vw,3.6rem);font-weight:800;line-height:1.1;letter-spacing:-.01em;margin-bottom:1rem}
+.hero h1 .green{color:var(--sage-deep)}
+.hero p.lede{max-width:36rem;margin:0 auto 2rem;color:#6B6B62;font-size:1.02rem}
+.cta-row{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:.95rem 1.9rem;border-radius:999px;font-size:.95rem;letter-spacing:.03em}
+.btn-green{background:var(--sage-deep);color:#fff}
+.btn-gold{background:var(--gold);color:#3A2E18}
+.hero-stats{display:flex;flex-wrap:wrap;justify-content:center;gap:2.2rem;margin-top:2.4rem}
+.hstat{text-align:center}
+.hstat b{display:block;font-size:1.5rem;color:var(--sage-deep)}
+.hstat span{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:#8A8A80}
 
-/* TICKER divider */
-.ticker{background:var(--olive);color:#fff;overflow:hidden;white-space:nowrap;padding:.7rem 0;font-weight:800;letter-spacing:.22em;text-transform:uppercase;font-size:.8rem}
-.ticker span{display:inline-block;padding:0 1.6rem}
-
-/* SERVICES — price-list poster style */
+/* SECTIONS */
 section{padding:3.4rem 1.2rem}
-.wrap{max-width:1100px;margin:0 auto}
-.sec-label{font-size:.72rem;font-weight:800;letter-spacing:.32em;text-transform:uppercase;color:var(--olive);margin-bottom:.6rem}
-h2.sec{font-size:clamp(1.8rem,6vw,2.6rem);font-weight:900;text-transform:uppercase;letter-spacing:.02em;margin-bottom:.7rem;color:var(--esp)}
-.sec-sub{max-width:42rem;color:#6B5B43;margin-bottom:2.2rem}
-.menu-card{background:var(--cream);border:2px solid var(--esp);border-radius:4px;padding:2rem 1.6rem;position:relative}
-.menu-card::before{content:"";position:absolute;inset:8px;border:1px solid var(--olive);border-radius:2px;pointer-events:none}
-.menu-head{text-align:center;margin-bottom:1.6rem}
-.menu-head h3{font-weight:900;text-transform:uppercase;letter-spacing:.14em;font-size:1.15rem;color:var(--esp)}
-.menu-head p{font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;color:var(--olive)}
-.svc-row{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:1rem .4rem;border-bottom:1px dotted var(--olive)}
-.svc-row:last-child{border-bottom:0}
-.svc-row h4{font-size:1.05rem;font-weight:800;text-transform:uppercase;letter-spacing:.03em;color:var(--esp)}
-.svc-row p{font-size:.9rem;color:#6B5B43;margin-top:.2rem}
-.price{font-weight:900;color:var(--wine);font-size:1.05rem;white-space:nowrap}
-.svc-note{margin-top:1.4rem;font-size:.88rem;color:#6B5B43;font-style:italic;text-align:center}
+.wrap{max-width:1080px;margin:0 auto}
+.sec-label{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem}
+h2.sec{font-size:clamp(1.7rem,5.5vw,2.4rem);font-weight:800;letter-spacing:-.01em;margin-bottom:.7rem}
+.sec-sub{max-width:42rem;color:#6B6B62;margin-bottom:2rem}
 
-/* WHY — wine band with three badges */
-.why{background:var(--wine);color:var(--cream)}
-.why .sec-label{color:var(--tan)}
-.why h2.sec{color:var(--cream)}
-.why .sec-sub{color:#E4CFC0}
-.badges{display:grid;gap:1.2rem;grid-template-columns:1fr;margin-top:2rem}
-@media(min-width:760px){.badges{grid-template-columns:repeat(3,1fr)}}
-.badge{border:1.5px solid rgba(194,167,125,.6);border-radius:4px;padding:1.8rem 1.5rem;text-align:center;background:rgba(43,28,16,.25)}
-.badge .icon{font-size:2.2rem;display:block;margin-bottom:.8rem}
-.badge h3{font-size:1.05rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.5rem;color:var(--tan)}
-.badge p{font-size:.9rem;color:#E4D5C0}
+/* SERVICES — soft rounded tiles with leaf motif */
+.services{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.svc-grid{display:grid;gap:1.1rem;grid-template-columns:1fr}
+@media(min-width:620px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:980px){.svc-grid{grid-template-columns:1fr 1fr 1fr}}
+.card{background:var(--ivory);border:1px solid var(--line);border-radius:18px;padding:1.7rem 1.5rem;transition:transform .25s ease,box-shadow .25s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(95,124,138,.14)}
+.card .leaf{width:46px;height:46px;border-radius:50%;background:var(--sage);display:flex;align-items:center;justify-content:center;font-size:1.35rem;margin-bottom:1rem}
+.card h3{font-size:1.12rem;font-weight:800;margin-bottom:.45rem}
+.card p{font-size:.92rem;color:#6B6B62}
 
-/* AREA */
-.towns{display:grid;gap:.8rem;grid-template-columns:1fr 1fr;margin-top:1.8rem}
-@media(min-width:640px){.towns{grid-template-columns:repeat(4,1fr)}}
-.town{background:var(--esp2);color:var(--parch);text-align:center;padding:.9rem .6rem;border-radius:3px;font-weight:700;letter-spacing:.04em;font-size:.92rem}
-.town.home{background:var(--olive);color:#fff}
+/* WHY — split with stat callout */
+.why-grid{display:grid;gap:2rem;grid-template-columns:1fr}
+@media(min-width:860px){.why-grid{grid-template-columns:1.2fr 1fr}}
+.why-list{list-style:none;margin-top:1.6rem}
+.why-list li{display:flex;gap:1rem;padding:1.1rem 0;border-bottom:1px dashed var(--line)}
+.why-list li:last-child{border-bottom:0}
+.check{flex:none;width:30px;height:30px;border-radius:50%;background:var(--sage);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+.why-list h3{font-size:1rem;font-weight:800;margin-bottom:.25rem}
+.why-list p{font-size:.9rem;color:#6B6B62}
+.callout{background:var(--sage-deep);color:#fff;border-radius:20px;padding:2.2rem 1.8rem;position:relative;overflow:hidden}
+.callout::after{content:"❧";position:absolute;right:1.2rem;bottom:.4rem;font-size:5rem;opacity:.18}
+.callout h3{font-size:1.4rem;font-weight:800;margin-bottom:.6rem}
+.callout p{font-size:.94rem;color:#E4EDE6;margin-bottom:1.4rem}
+.callout .btn-gold{display:inline-block}
+
+/* AREA — town chips */
+.area{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}
+.area .sec-sub{margin-left:auto;margin-right:auto}
+.towns{display:flex;flex-wrap:wrap;gap:.65rem;justify-content:center;margin-top:1.6rem}
+.town{border:1.5px solid var(--sage);color:var(--sage-deep);padding:.55rem 1.15rem;border-radius:999px;font-size:.88rem;font-weight:600}
+.town.home{background:var(--sage-deep);color:#fff;border-color:var(--sage-deep)}
+.area-note{margin-top:1.3rem;font-size:.9rem;color:#8A8A80}
 
 /* CONTACT */
-.contact{background:var(--esp);color:var(--cream)}
-.contact h2.sec{color:var(--cream)}
-.contact .sec-label{color:var(--tan)}
-.contact .sec-sub{color:#CBBFA4}
 .contact-grid{display:grid;gap:2rem;grid-template-columns:1fr}
 @media(min-width:860px){.contact-grid{grid-template-columns:1fr 1.1fr}}
-.info-block{border:1px solid rgba(194,167,125,.5);border-radius:4px;padding:1.6rem;margin-bottom:1.1rem;background:rgba(62,44,28,.4)}
-.info-block h4{font-size:.72rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--tan);margin-bottom:.35rem}
-.info-block a{color:var(--cream);text-decoration:none;font-weight:800;font-size:1.15rem}
-.info-block p{color:#D8CBB2}
-form{background:var(--cream);border-radius:4px;padding:1.7rem}
-label{display:block;font-size:.74rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--olive);margin:.95rem 0 .35rem}
+.info-card{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:1.8rem;margin-bottom:1.1rem}
+.info-card h4{font-size:.72rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--blue);margin-bottom:.3rem}
+.info-card a{color:var(--char);text-decoration:none;font-weight:700;font-size:1.02rem}
+.info-card p{color:#6B6B62;font-size:.95rem}
+form{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:1.8rem}
+label{display:block;font-size:.75rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin:.95rem 0 .35rem}
 label:first-child{margin-top:0}
-input,textarea,select{width:100%;max-width:100%;padding:.78rem .9rem;border:1.5px solid #D8CBB2;border-radius:3px;font-size:1rem;font-family:var(--sans);background:#fff;color:var(--ink)}
-textarea{min-height:105px;resize:vertical}
-button.submit{margin-top:1.2rem;width:100%;background:var(--wine);color:#fff;border:0;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:1rem;font-size:.92rem;border-radius:3px;cursor:pointer}
-button.submit:hover{background:#4A2424}
-footer{background:var(--esp2);color:#A68F6B;padding:1.6rem 1.2rem;text-align:center;font-size:.82rem;border-top:3px solid var(--olive)}
+input,textarea,select{width:100%;max-width:100%;padding:.78rem .9rem;border:1.5px solid var(--line);border-radius:12px;font-size:1rem;font-family:var(--sans);background:#fff;color:var(--char)}
+textarea{min-height:110px;resize:vertical}
+button.submit{margin-top:1.2rem;width:100%;background:var(--sage-deep);color:#fff;border:0;font-weight:800;letter-spacing:.05em;padding:1rem;font-size:.95rem;border-radius:999px;cursor:pointer}
+button.submit:hover{background:#4E6A58}
+footer{background:var(--char);color:#B9B4A6;padding:1.6rem 1.2rem;text-align:center;font-size:.82rem}
 .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
 </style>
@@ -115,14 +112,14 @@ footer{background:var(--esp2);color:#A68F6B;padding:1.6rem 1.2rem;text-align:cen
 
 <nav>
   <div class="nav-inner">
-    <a class="brand" href="#top">Dominican Power<small>Barber Shop · Port Arthur TX</small></a>
+    <a class="brand" href="#top"><b>LJ</b> Lawn Care<small>West Salem · Wisconsin</small></a>
     <ul class="links">
       <li><a href="#services">Services</a></li>
       <li><a href="#why">Why Us</a></li>
       <li><a href="#area">Service Area</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a class="nav-cta" href="tel:+14094605339">Call Now</a>
+    <a class="nav-cta" href="#contact">Free Estimate</a>
     <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('mmenu').classList.toggle('open')">☰</button>
   </div>
   <div class="mobile-menu" id="mmenu">
@@ -131,94 +128,102 @@ footer{background:var(--esp2);color:#A68F6B;padding:1.6rem 1.2rem;text-align:cen
 </nav>
 
 <header class="hero" id="top">
+  <div class="stripes" aria-hidden="true"></div>
   <div class="hero-inner">
-    <div class="badge-row"><div class="pole" aria-hidden="true"></div><div class="est">Port Arthur · Texas</div></div>
-    <h1>Walk out <span class="tan">sharper</span> than you walked in.</h1>
-    <p class="lede">Dominican Power Barber Shop brings real barbershop craft to Port Arthur — precision fades, clean lineups, and hot-towel shaves, every single cut.</p>
+    <span class="pill">Lawn Care · West Salem, WI</span>
+    <h1>A lawn you'll be <span class="green">proud to come home to.</span></h1>
+    <p class="lede">LJ Lawn Care keeps West Salem yards sharp — crisp edges, even cuts, and honest seasonal care, on a schedule you can count on.</p>
     <div class="cta-row">
-      <a class="btn btn-olive" href="tel:+14094605339">Call (409) 460-5339</a>
-      <a class="btn btn-outline" href="#services">See Services</a>
+      <a class="btn btn-green" href="#contact">Get a Free Estimate</a>
+      <a class="btn btn-gold" href="mailto:services.ljlawncare@gmail.com">Email Us</a>
     </div>
-    <div class="hours-strip">
-      <div><b>Walk-ins</b>Welcome daily</div>
-      <div><b>Hours</b>Mon – Sat · 9 AM – 7 PM</div>
-      <div><b>Find us</b>Port Arthur, Texas</div>
+    <div class="hero-stats">
+      <div class="hstat"><b>Free</b><span>Estimates</span></div>
+      <div class="hstat"><b>Weekly</b><span>Mowing Plans</span></div>
+      <div class="hstat"><b>Local</b><span>West Salem Based</span></div>
     </div>
   </div>
 </header>
 
-<div class="ticker" aria-hidden="true"><span>Fades ✂ Lineups ✂ Beard Trims ✂ Hot Towel Shaves ✂ Kids Cuts ✂ Fades ✂ Lineups ✂ Beard Trims ✂ Hot Towel Shaves ✂ Kids Cuts</span></div>
-
-<section id="services">
+<section class="services" id="services">
   <div class="wrap">
-    <div class="sec-label reveal">The Menu</div>
-    <h2 class="sec reveal">Barber Services</h2>
-    <p class="sec-sub reveal">Every service finishes with a hot lather neckline cleanup and a style — you leave the chair ready for the day. Call for pricing.</p>
-    <div class="menu-card reveal">
-      <div class="menu-head"><h3>Dominican Power</h3><p>Cut · Shave · Style</p></div>
-      <div class="svc-row"><div><h4>Precision Fade</h4><p>Skin, taper, or drop fade — blended clean with a razor-sharp lineup.</p></div><span class="price">Call</span></div>
-      <div class="svc-row"><div><h4>Classic Haircut</h4><p>Scissor work and clipper blends for timeless, everyday styles.</p></div><span class="price">Call</span></div>
-      <div class="svc-row"><div><h4>Beard Trim &amp; Shape</h4><p>Sculpted lines, even length, hot towel finish — a beard that means business.</p></div><span class="price">Call</span></div>
-      <div class="svc-row"><div><h4>Hot Towel Shave</h4><p>Straight-razor shave with hot towels and aftercare. The full classic ritual.</p></div><span class="price">Call</span></div>
-      <div class="svc-row"><div><h4>Kids Cuts</h4><p>Patient, careful cuts for young gentlemen — first cuts welcome.</p></div><span class="price">Call</span></div>
-      <div class="svc-row"><div><h4>Lineup &amp; Edge-Up</h4><p>Quick between-cut touch-up to keep the fade fresh and the lines crisp.</p></div><span class="price">Call</span></div>
-      <p class="svc-note">Walk-ins welcome — or call ahead and we'll have the chair ready.</p>
+    <span class="sec-label reveal">What we do</span>
+    <h2 class="sec reveal">Lawn Services</h2>
+    <p class="sec-sub reveal">One visit or all season long — every service includes a full cleanup so your yard is ready to enjoy the moment we leave.</p>
+    <div class="svc-grid">
+      <div class="card reveal"><div class="leaf">🌱</div><h3>Weekly &amp; Bi-Weekly Mowing</h3><p>Consistent cuts at the right height for Wisconsin grass — bagged or mulched, with clippings never left behind.</p></div>
+      <div class="card reveal"><div class="leaf">✂</div><h3>Edging &amp; Trimming</h3><p>Crisp lines along sidewalks, driveways, and beds. The detail work that makes a good mow look great.</p></div>
+      <div class="card reveal"><div class="leaf">🌿</div><h3>Fertilization &amp; Weed Control</h3><p>Seasonally timed treatments that feed your lawn and crowd out dandelions and crabgrass — thick, green, and even.</p></div>
+      <div class="card reveal"><div class="leaf">🍂</div><h3>Spring &amp; Fall Cleanups</h3><p>Leaf removal, stick pickup, and bed cleanup that resets your yard after winter and before it — ready for the next season.</p></div>
+      <div class="card reveal"><div class="leaf">🌾</div><h3>Overseeding &amp; Aeration</h3><p>Core aeration and overseeding in early fall to thicken thin spots and give tired lawns a fresh start.</p></div>
+      <div class="card reveal"><div class="leaf">❄</div><h3>Shrub &amp; Bed Touch-Ups</h3><p>Light shrub trimming and mulch bed tidying to keep the whole front of your home looking cared for.</p></div>
     </div>
   </div>
 </section>
 
 <section class="why" id="why">
   <div class="wrap">
-    <div class="sec-label reveal">Why Dominican Power</div>
-    <h2 class="sec reveal">Real barbers. Real standards.</h2>
-    <p class="sec-sub reveal">This isn't a quick-clip chain — it's a shop where your cut gets the time it deserves.</p>
-    <div class="badges">
-      <div class="badge reveal"><span class="icon">✂</span><h3>Fade specialists</h3><p>Precision blending and razor lineups are our signature — the details other shops rush, we perfect.</p></div>
-      <div class="badge reveal"><span class="icon">🪒</span><h3>Old-school ritual</h3><p>Hot towels, straight razors, and a proper finish. The classic barbershop experience, done right.</p></div>
-      <div class="badge reveal"><span class="icon">🤝</span><h3>Neighborhood shop</h3><p>Port Arthur locals, fair prices, honest advice on what suits your hair. Walk in a stranger, leave a regular.</p></div>
+    <div class="why-grid">
+      <div>
+        <span class="sec-label reveal">Why LJ</span>
+        <h2 class="sec reveal">The dependable crew for your yard</h2>
+        <ul class="why-list">
+          <li class="reveal"><span class="check">✓</span><div><h3>Same day, every week</h3><p>Your mowing day stays your mowing day. No chasing, no guessing — we show up when we say we will.</p></div></li>
+          <li class="reveal"><span class="check">✓</span><div><h3>Cleanup included, always</h3><p>Driveways blown off, clippings handled, gates latched. We treat your property like it's our own block.</p></div></li>
+          <li class="reveal"><span class="check">✓</span><div><h3>Honest, upfront pricing</h3><p>Free estimates with a flat rate before we start. No upsells, no surprise add-ons.</p></div></li>
+          <li class="reveal"><span class="check">✓</span><div><h3>True local, West Salem</h3><p>We know Coulee Region soil and weather — and we cut lawns here year after year, not just this season.</p></div></li>
+        </ul>
+      </div>
+      <div class="callout reveal">
+        <h3>One call, one crew, one less chore.</h3>
+        <p>Join the weekly route and stop thinking about your lawn. Free estimates, friendly service, and a yard your neighbors will notice.</p>
+        <a class="btn btn-gold" href="#contact">Start With a Free Estimate</a>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="area">
+<section class="area" id="area">
   <div class="wrap">
-    <div class="sec-label reveal">Find the shop</div>
-    <h2 class="sec reveal">Serving Port Arthur &amp; the Golden Triangle</h2>
+    <span class="sec-label reveal">Where we work</span>
+    <h2 class="sec reveal">Service Area</h2>
+    <p class="sec-sub reveal">Based in West Salem, serving the La Crosse area and nearby communities.</p>
     <div class="towns reveal">
-      <div class="town home">Port Arthur</div><div class="town">Beaumont</div><div class="town">Nederland</div><div class="town">Port Neches</div><div class="town">Groves</div><div class="town">Orange</div><div class="town">Sabine Pass</div><div class="town">Vidor</div>
+      <span class="town home">West Salem</span><span class="town">La Crosse</span><span class="town">Onalaska</span><span class="town">Holmen</span><span class="town">Bangor</span><span class="town">Sparta</span><span class="town">Mindoro</span>
     </div>
+    <p class="area-note reveal">Outside these towns? Ask anyway — we add new routes when the schedule allows.</p>
   </div>
 </section>
 
 <section class="contact" id="contact">
   <div class="wrap">
-    <div class="sec-label reveal">Book your chair</div>
-    <h2 class="sec reveal">Get in Touch</h2>
-    <p class="sec-sub reveal">Call for same-day availability, or send us a message and we'll get right back to you.</p>
+    <span class="sec-label reveal">Get in touch</span>
+    <h2 class="sec reveal">Request a Free Estimate</h2>
+    <p class="sec-sub reveal">Tell us about your yard — we usually reply within one business day.</p>
     <div class="contact-grid">
       <div class="reveal">
-        <div class="info-block"><h4>Phone</h4><a href="tel:+14094605339">(409) 460-5339</a><p>Call or text — walk-ins welcome</p></div>
-        <div class="info-block"><h4>Email</h4><a href="mailto:dominican_power_barber_shop@hotmail.com" style="font-size:.95rem">dominican_power_barber_shop@hotmail.com</a></div>
-        <div class="info-block"><h4>Hours</h4><p>Monday – Saturday · 9:00 AM – 7:00 PM<br>Sunday · Closed</p></div>
+        <div class="info-card"><h4>Email</h4><a href="mailto:services.ljlawncare@gmail.com">services.ljlawncare@gmail.com</a></div>
+        <div class="info-card"><h4>Based in</h4><p>West Salem, Wisconsin</p></div>
+        <div class="info-card"><h4>Hours</h4><p>Monday – Friday · 8:00 AM – 6:00 PM<br>Saturday · 9:00 AM – 2:00 PM</p></div>
       </div>
       <form class="reveal" onsubmit="return sendQuote(this)">
-        <label for="n3">Your name</label><input id="n3" name="name" required>
-        <label for="p3">Phone</label><input id="p3" name="phone" type="tel">
-        <label for="s3">Service</label>
-        <select id="s3" name="service"><option>Precision Fade</option><option>Classic Haircut</option><option>Beard Trim &amp; Shape</option><option>Hot Towel Shave</option><option>Kids Cut</option><option>Lineup &amp; Edge-Up</option></select>
-        <label for="m3">Message</label><textarea id="m3" name="message" placeholder="e.g. Looking to book a fade this Saturday afternoon…"></textarea>
-        <button class="submit" type="submit">Send Message</button>
+        <label for="n2">Your name</label><input id="n2" name="name" required>
+        <label for="p2">Phone</label><input id="p2" name="phone" type="tel">
+        <label for="s2">Service needed</label>
+        <select id="s2" name="service"><option>Weekly / Bi-Weekly Mowing</option><option>Edging &amp; Trimming</option><option>Fertilization &amp; Weed Control</option><option>Spring &amp; Fall Cleanup</option><option>Overseeding &amp; Aeration</option><option>Shrub &amp; Bed Touch-Ups</option></select>
+        <label for="m2">Tell us about your yard</label><textarea id="m2" name="message" placeholder="e.g. Corner lot, about half an acre, needs weekly mowing starting May…"></textarea>
+        <button class="submit" type="submit">Send Estimate Request</button>
       </form>
     </div>
   </div>
 </section>
 
-<footer>© 2026 Dominican Power Barber Shop · Port Arthur, TX &nbsp;·&nbsp; Demo by Wahab Codes</footer>
+<footer>© 2026 LJ Lawn Care · West Salem, WI &nbsp;·&nbsp; Demo by Wahab Codes</footer>
 
 <script>
 function sendQuote(f){
-  var body='Name: '+f.name.value+'%0D%0APhone: '+f.phone.value+'%0D%0AService: '+f.service.value+'%0D%0AMessage: '+encodeURIComponent(f.message.value);
-  window.location.href='mailto:dominican_power_barber_shop@hotmail.com?subject=Booking Request — '+encodeURIComponent(f.service.value)+'&body='+body;
+  var body='Name: '+f.name.value+'%0D%0APhone: '+f.phone.value+'%0D%0AService: '+f.service.value+'%0D%0ADetails: '+encodeURIComponent(f.message.value);
+  window.location.href='mailto:services.ljlawncare@gmail.com?subject=Free Estimate Request — '+encodeURIComponent(f.service.value)+'&body='+body;
   return false;
 }
 var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{threshold:.12});
