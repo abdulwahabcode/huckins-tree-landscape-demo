@@ -3,106 +3,104 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ramos Lawn Care Service | Yardley, PA</title>
-<meta name="description" content="Lawn care and landscaping in Yardley, PA. Weekly mowing, mulching, leaf clean-up and more. Free estimates.">
+<title>Deluxe Detailing | Palm Beach County, FL</title>
+<meta name="description" content="Professional car detailing in Palm Beach County, Florida. Interior, exterior, wax, ceramic and more. Call (305) 804-8810 for a free quote.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --ivory:#F4F1EC; --sage:#8FAF9B; --saged:#5F7C6E; --sagel:#DCE8DE;
-  --gold:#C2A46D; --blue:#5F7C8A; --char:#2F2F2F; --muted:#5c6157;
+  --ink:#1C1F24; --ink2:#252A32; --slate:#3A4452; --gray:#9AA3AD;
+  --brass:#C79C5A; --brass2:#a8833f; --cream:#F2EEE7; --off:#E2E8F0;
 }
 html{scroll-behavior:smooth}
 html,body{overflow-x:clip}
-body{font-family:'Nunito',system-ui,sans-serif;background:var(--ivory);color:var(--char);line-height:1.65}
+body{font-family:'Oswald',Arial,sans-serif;background:var(--ink);color:var(--off);line-height:1.6;letter-spacing:.02em}
 a{color:inherit}
-nav{position:sticky;top:0;z-index:50;background:rgba(244,241,236,.96);backdrop-filter:blur(8px);border-bottom:1px solid #e2ddd2}
-.nav-inner{max-width:1120px;margin:0 auto;padding:.8rem 1.1rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
-.brand{display:flex;align-items:center;gap:.55rem;font-weight:800;font-size:1.02rem;text-decoration:none;color:var(--char)}
+nav{position:sticky;top:0;z-index:50;background:rgba(28,31,36,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(199,156,90,.25)}
+.nav-inner{max-width:1150px;margin:0 auto;padding:.85rem 1.1rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:600;font-size:1.1rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
 .brand svg{width:32px;height:32px;flex:none}
-.nav-links{display:flex;gap:1.3rem;align-items:center}
-.nav-links a{text-decoration:none;font-size:.93rem;font-weight:600;color:var(--char)}
-.nav-links a:hover{color:var(--saged)}
-.cta-btn{background:var(--saged);color:#fff;text-decoration:none;font-weight:800;font-size:.9rem;padding:.65rem 1.25rem;border-radius:999px;display:inline-block;border:none;cursor:pointer}
-.cta-btn:hover{background:#4e6a5e}
-.burger{display:none;background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--char);line-height:1}
+.nav-links{display:flex;gap:1.4rem;align-items:center}
+.nav-links a{text-decoration:none;font-size:.92rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gray)}
+.nav-links a:hover{color:var(--brass)}
+.cta-btn{background:var(--brass);color:#15100a;text-decoration:none;font-weight:600;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;padding:.65rem 1.3rem;border-radius:4px;display:inline-block;border:none;cursor:pointer;position:relative;overflow:hidden}
+.cta-btn::after{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg)}
+.cta-btn:hover::after{animation:shine .8s ease}
+.cta-btn:hover{background:#d4ab6b}
+@keyframes shine{to{left:130%}}
+.burger{display:none;background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--off);line-height:1}
 @media(max-width:760px){
-  .nav-links{position:absolute;top:100%;left:0;right:0;background:var(--ivory);flex-direction:column;align-items:stretch;padding:0;max-height:0;overflow:hidden;transition:max-height .3s ease;border-bottom:1px solid #e2ddd2}
-  .nav-links.open{max-height:360px}
-  .nav-links a{padding:.85rem 1.3rem;border-top:1px solid #e7e2d6}
+  .nav-links{position:absolute;top:100%;left:0;right:0;background:var(--ink);flex-direction:column;align-items:stretch;padding:0;max-height:0;overflow:hidden;transition:max-height .3s ease;border-bottom:1px solid rgba(199,156,90,.25)}
+  .nav-links.open{max-height:380px}
+  .nav-links a{padding:.85rem 1.3rem;border-top:1px solid rgba(154,163,173,.15)}
   .nav-links .cta-btn{margin:.9rem 1.3rem 1.2rem;text-align:center}
   .burger{display:block}
 }
-.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--sagel) 0%,var(--ivory) 100%)}
-.hero::after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:70px;background:var(--ivory);border-radius:50% 50% 0 0 / 100% 100% 0 0}
-.hero-grid{max-width:1120px;margin:0 auto;padding:3.2rem 1.1rem 4.5rem;display:grid;gap:2rem;align-items:center;position:relative}
-@media(min-width:880px){.hero-grid{grid-template-columns:1.1fr .9fr;padding:4rem 1.1rem 5.5rem}}
-.pill{display:inline-block;background:#fff;border:1px solid var(--sage);color:var(--saged);font-weight:800;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;padding:.4rem 1rem;border-radius:999px;margin-bottom:1.1rem}
-.hero h1{font-size:clamp(2.2rem,6.5vw,3.7rem);line-height:1.1;font-weight:800;margin-bottom:1rem}
-.hero h1 span{color:var(--saged)}
-.hero p.lede{font-size:1.07rem;color:var(--muted);max-width:33rem;margin-bottom:1.7rem}
-.hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem;margin-bottom:1.6rem}
-.ghost-btn{border:2px solid var(--saged);color:var(--saged);text-decoration:none;font-weight:800;padding:.6rem 1.2rem;border-radius:999px;font-size:.9rem}
-.ghost-btn:hover{background:var(--sagel)}
-.mini-stats{display:flex;gap:2rem;flex-wrap:wrap}
-.mini-stats div b{display:block;font-size:1.5rem;color:var(--saged)}
-.mini-stats div span{font-size:.85rem;color:var(--muted)}
-.leaf-art{display:flex;justify-content:center}
-.leaf-art svg{width:min(280px,70vw);height:auto}
-section{padding:3.4rem 1.1rem}
-.wrap{max-width:1120px;margin:0 auto}
-.sec-head{text-align:center;margin-bottom:2.2rem}
-.sec-head .kicker{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--saged);font-weight:800;margin-bottom:.5rem}
-.sec-head h2{font-size:clamp(1.7rem,4.5vw,2.4rem);font-weight:800}
-.sec-head p{max-width:42rem;margin:.6rem auto 0;color:var(--muted)}
-.svc-grid{display:grid;gap:1.2rem}
-@media(min-width:680px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1000px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
-.svc{background:#fff;border-radius:22px;padding:1.7rem 1.5rem;box-shadow:0 6px 24px rgba(95,124,110,.10);border-top:6px solid var(--sage)}
-.svc:nth-child(2){border-top-color:var(--gold)}
-.svc:nth-child(3){border-top-color:var(--blue)}
-.svc:nth-child(5){border-top-color:var(--gold)}
-.svc .leaf-ic{width:46px;height:46px;border-radius:50%;background:var(--sagel);display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
-.svc .leaf-ic svg{width:24px;height:24px;stroke:var(--saged);fill:none;stroke-width:2}
-.svc h3{font-size:1.12rem;font-weight:800;margin-bottom:.45rem}
-.svc p{font-size:.94rem;color:var(--muted)}
-/* SEASON STRIP */
-.strip{background:var(--saged);color:#F6F8F5;border-radius:26px;padding:2.2rem 1.8rem;display:grid;gap:1.4rem;align-items:center}
-@media(min-width:860px){.strip{grid-template-columns:1fr auto}}
-.strip h2{font-size:clamp(1.4rem,3.5vw,2rem);font-weight:800;margin-bottom:.5rem}
-.strip p{opacity:.92;max-width:36rem}
-.strip .cta-btn{background:var(--gold);color:#2F2F2F;white-space:nowrap}
-.strip .cta-btn:hover{background:#cdb072}
-/* WHY */
-#why{background:#fff}
-.why-row{display:grid;gap:1.4rem}
-@media(min-width:800px){.why-row{grid-template-columns:repeat(4,1fr)}}
-.why-card{text-align:center;padding:1.2rem .6rem}
-.why-card .dot{width:64px;height:64px;margin:0 auto 1rem;border-radius:50%;background:var(--sagel);display:flex;align-items:center;justify-content:center}
-.why-card .dot svg{width:28px;height:28px;stroke:var(--saged);fill:none;stroke-width:2}
-.why-card h3{font-size:1.05rem;font-weight:800;margin-bottom:.4rem}
-.why-card p{font-size:.92rem;color:var(--muted)}
-/* AREA */
-.town-chips{display:flex;flex-wrap:wrap;gap:.65rem;justify-content:center;margin-top:1.4rem}
-.town-chips span{background:#fff;border:1.5px solid var(--sage);color:var(--saged);font-weight:700;padding:.5rem 1.15rem;border-radius:999px;font-size:.9rem}
-.town-chips span.home{background:var(--saged);color:#fff;border-color:var(--saged)}
-/* CONTACT */
-#contact{background:linear-gradient(180deg,var(--ivory),var(--sagel))}
-.contact-grid{display:grid;gap:2rem;background:#fff;border-radius:26px;padding:2rem 1.6rem;box-shadow:0 10px 40px rgba(95,124,110,.12)}
-@media(min-width:880px){.contact-grid{grid-template-columns:.9fr 1.1fr;padding:2.6rem}}
-.contact-info h3{font-size:1.3rem;font-weight:800;margin-bottom:1rem}
-.contact-info p{margin-bottom:.9rem;color:var(--muted)}
-.contact-info strong{color:var(--char)}
-.contact-info a{color:var(--saged);font-weight:700}
-form.quote label{display:block;font-size:.85rem;font-weight:700;margin-bottom:.35rem;color:var(--saged)}
-form.quote input,form.quote select,form.quote textarea{width:100%;max-width:100%;padding:.72rem .95rem;border-radius:14px;border:1.5px solid #ddd8ca;background:#fbfaf6;font-family:inherit;font-size:.95rem;margin-bottom:1rem;color:var(--char)}
-form.quote input:focus,form.quote textarea:focus,form.quote select:focus{outline:2px solid var(--sage);border-color:var(--sage)}
+.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#232830 0%,var(--ink) 55%,#16181c 100%)}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(800px 380px at 75% 20%,rgba(199,156,90,.16),transparent 60%)}
+.hero-grid{max-width:1150px;margin:0 auto;padding:4rem 1.1rem 3.4rem;display:grid;gap:2.2rem;align-items:center;position:relative}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr;padding:5.5rem 1.1rem 4.5rem}}
+.tag{display:inline-block;color:var(--brass);font-size:.8rem;letter-spacing:.3em;text-transform:uppercase;margin-bottom:1rem}
+.hero h1{font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.02;font-weight:600;text-transform:uppercase;margin-bottom:1rem}
+.hero h1 .gold{color:var(--brass)}
+.hero p.lede{font-size:1.05rem;color:var(--gray);max-width:32rem;margin-bottom:1.8rem;font-weight:300}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:1.8rem}
+.phone-big{display:block;font-size:1.6rem;color:var(--brass);text-decoration:none;font-weight:500;letter-spacing:.06em;margin-bottom:.4rem}
+.hero small{color:var(--gray);font-size:.85rem;letter-spacing:.06em}
+.car-art{display:flex;justify-content:center}
+.car-art svg{width:min(340px,82vw);height:auto;filter:drop-shadow(0 20px 30px rgba(0,0,0,.5))}
+section{padding:3.6rem 1.1rem}
+.wrap{max-width:1150px;margin:0 auto}
+.sec-head{margin-bottom:2.2rem;display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.sec-head .kicker{color:var(--brass);font-size:.8rem;letter-spacing:.3em;text-transform:uppercase;margin-bottom:.5rem}
+.sec-head h2{font-size:clamp(1.9rem,5vw,2.8rem);text-transform:uppercase;font-weight:500;line-height:1.1}
+.svc-list{display:grid;gap:1rem}
+.svc-row{display:grid;grid-template-columns:auto 1fr;gap:1.3rem;background:var(--ink2);border:1px solid rgba(154,163,173,.14);border-radius:8px;padding:1.5rem 1.4rem;align-items:start;transition:border-color .25s,transform .25s}
+.svc-row:hover{border-color:rgba(199,156,90,.55);transform:translateY(-2px)}
+.svc-row .num{font-size:2rem;color:var(--brass);font-weight:300;line-height:1;min-width:3rem}
+.svc-row h3{font-size:1.2rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.4rem}
+.svc-row h3 .t{color:var(--brass)}
+.svc-row p{color:var(--gray);font-size:.97rem;font-weight:300}
+@media(min-width:900px){.svc-list{grid-template-columns:repeat(2,1fr)}}
+#packages{background:var(--cream);color:#23262c}
+#packages .sec-head .kicker{color:var(--brass2)}
+#packages .sec-head h2{color:var(--ink)}
+.pkg-grid{display:grid;gap:1.2rem}
+@media(min-width:800px){.pkg-grid{grid-template-columns:repeat(3,1fr)}}
+.pkg{background:#fff;border-radius:10px;padding:2rem 1.6rem;border-top:5px solid var(--slate);box-shadow:0 8px 26px rgba(28,31,36,.08)}
+.pkg.mid{border-top-color:var(--brass);transform:scale(1.02)}
+.pkg h3{text-transform:uppercase;letter-spacing:.1em;font-size:1.15rem;margin-bottom:.3rem}
+.pkg .sub{color:#7c828b;font-size:.88rem;margin-bottom:1rem}
+.pkg ul{list-style:none;margin-bottom:1.4rem}
+.pkg li{padding:.45rem 0;border-bottom:1px solid #eee9dd;font-size:.93rem;font-weight:300}
+.pkg li::before{content:"— ";color:var(--brass2);font-weight:600}
+.pkg a.pkg-cta{display:block;text-align:center;text-decoration:none;background:var(--ink);color:var(--off);text-transform:uppercase;letter-spacing:.12em;font-size:.85rem;padding:.75rem;border-radius:4px;font-weight:500}
+.pkg.mid a.pkg-cta{background:var(--brass);color:#15100a}
+#why{background:linear-gradient(180deg,var(--ink),#15181d)}
+.why-grid{display:grid;gap:1rem}
+@media(min-width:760px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+.why{background:rgba(199,156,90,.06);border:1px solid rgba(199,156,90,.3);border-radius:8px;padding:1.6rem}
+.why h3{color:var(--brass);text-transform:uppercase;letter-spacing:.1em;font-size:1.02rem;margin-bottom:.5rem}
+.why p{color:var(--gray);font-weight:300;font-size:.95rem}
+.towns{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.4rem}
+.towns span{border:1px solid rgba(154,163,173,.35);color:var(--gray);padding:.5rem 1.1rem;font-size:.88rem;letter-spacing:.08em;text-transform:uppercase}
+.towns span.home{background:var(--brass);border-color:var(--brass);color:#15100a;font-weight:600}
+#contact{background:var(--ink2);border-top:1px solid rgba(199,156,90,.25)}
+.contact-grid{display:grid;gap:2rem}
+@media(min-width:880px){.contact-grid{grid-template-columns:.9fr 1.1fr}}
+.contact-info p{margin-bottom:1rem;color:var(--gray);font-weight:300}
+.contact-info strong{color:var(--off);font-weight:500}
+.contact-info a{color:var(--brass);text-decoration:none}
+form.quote{background:rgba(0,0,0,.25);border:1px solid rgba(199,156,90,.3);border-radius:8px;padding:1.7rem}
+form.quote label{display:block;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);margin-bottom:.35rem}
+form.quote input,form.quote select,form.quote textarea{width:100%;max-width:100%;padding:.72rem .95rem;border-radius:4px;border:1px solid rgba(154,163,173,.3);background:#14171c;color:var(--off);font-family:inherit;font-size:.95rem;margin-bottom:1rem;font-weight:300}
+form.quote select option{color:#15100a}
 form.quote textarea{min-height:110px;resize:vertical}
-footer{background:var(--saged);color:#F6F8F5;padding:1.7rem 1.1rem;text-align:center;font-size:.86rem}
-footer .credit{margin-top:.4rem;opacity:.7;font-size:.78rem}
-footer a{color:#fff}
+footer{background:#101216;padding:1.7rem 1.1rem;text-align:center;font-size:.85rem;color:var(--gray)}
+footer .credit{margin-top:.4rem;opacity:.55;font-size:.76rem;letter-spacing:.1em}
+footer a{color:var(--brass);text-decoration:none}
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
 .reveal.in{opacity:1;transform:none}
 </style>
@@ -112,8 +110,8 @@ footer a{color:#fff}
 <nav>
   <div class="nav-inner">
     <a class="brand" href="#top">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 28C8 22 6 14 8 6c8-2 16 0 18 8 .8 3.4-.4 8-4 12-2 1.4-4 2-6 2z" fill="#8FAF9B"/><path d="M10 24C14 18 18 14 24 10" stroke="#5F7C6E" stroke-width="1.6" fill="none"/></svg>
-      Ramos Lawn Care Service
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 20l3-8a3 3 0 0 1 3-2h8l4 4h4a2 2 0 0 1 2 2v4h-3" fill="none" stroke="#C79C5A" stroke-width="2"/><circle cx="11" cy="20" r="3" fill="none" stroke="#C79C5A" stroke-width="2"/><circle cx="23" cy="20" r="3" fill="none" stroke="#C79C5A" stroke-width="2"/><path d="M4 20h4M14 20h6" stroke="#C79C5A" stroke-width="2"/></svg>
+      Deluxe Detailing
     </a>
     <button class="burger" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
     <div class="nav-links" id="navlinks">
@@ -121,7 +119,7 @@ footer a{color:#fff}
       <a href="#why">Why Us</a>
       <a href="#area">Service Area</a>
       <a href="#contact">Contact</a>
-      <a class="cta-btn" href="#contact">Get a Free Quote</a>
+      <a class="cta-btn" href="tel:+13058048810">(305) 804-8810</a>
     </div>
   </div>
 </nav>
@@ -129,26 +127,27 @@ footer a{color:#fff}
 <header class="hero" id="top">
   <div class="hero-grid">
     <div>
-      <span class="pill">Yardley, Pennsylvania</span>
-      <h1>A lawn you'll actually <span>love coming home to.</span></h1>
-      <p class="lede">Ramos Lawn Care Service keeps Bucks County yards mowed, edged, and spotless — week after week, on schedule, without you lifting a finger.</p>
+      <span class="tag">Palm Beach County · Florida</span>
+      <h1>Showroom shine, <span class="gold">delivered.</span></h1>
+      <p class="lede">Deluxe Detailing brings out the best in your car — deep interior cleans, mirror-gloss paint work, and finishes that turn heads on I-95.</p>
+      <a class="phone-big" href="tel:+13058048810">(305) 804-8810</a>
       <div class="hero-ctas">
         <a class="cta-btn" href="#contact">Get a Free Quote</a>
-        <a class="ghost-btn" href="mailto:ramoslandscapingdesign@gmail.com?subject=Free%20Quote%20Request%20—%20Ramos%20Lawn%20Care">Email Us</a>
       </div>
-      <div class="mini-stats">
-        <div><b>Weekly</b><span>mowing routes</span></div>
-        <div><b>Free</b><span>estimates</span></div>
-        <div><b>Local</b><span>Bucks County crew</span></div>
-      </div>
+      <small>Free estimates · Interior &amp; exterior · We come to you</small>
     </div>
-    <div class="leaf-art" aria-hidden="true">
-      <svg viewBox="0 0 200 200">
-        <circle cx="100" cy="100" r="80" fill="#fff"/>
-        <path d="M100 160C60 140 55 90 70 45c35-8 70 5 76 40 3 16-6 45-46 75z" fill="#8FAF9B"/>
-        <path d="M82 140C100 110 118 92 140 78" stroke="#F4F1EC" stroke-width="4" fill="none" stroke-linecap="round"/>
-        <path d="M20 165c25-8 55-10 80-6M30 178c30-6 70-6 100-2" stroke="#5F7C6E" stroke-width="5" fill="none" stroke-linecap="round"/>
-        <circle cx="150" cy="60" r="10" fill="#C2A46D"/>
+    <div class="car-art" aria-hidden="true">
+      <svg viewBox="0 0 340 190">
+        <ellipse cx="170" cy="160" rx="140" ry="14" fill="#000" opacity=".5"/>
+        <path d="M30 140c0-14 8-24 20-28l30-24c8-6 18-10 30-10h70c16 0 30 8 40 20l26 22c10 6 14 14 14 20v10H30z" fill="#3A4452" stroke="#C79C5A" stroke-width="2"/>
+        <path d="M110 78l-22 22h150l-28-22z" fill="#9AA3AD" opacity=".35"/>
+        <path d="M60 150l60-52" stroke="#E2E8F0" stroke-width="3" opacity=".35"/>
+        <path d="M90 150l60-52" stroke="#E2E8F0" stroke-width="2" opacity=".2"/>
+        <circle cx="95" cy="148" r="20" fill="#15181c" stroke="#C79C5A" stroke-width="2.5"/>
+        <circle cx="95" cy="148" r="8" fill="#3A4452"/>
+        <circle cx="245" cy="148" r="20" fill="#15181c" stroke="#C79C5A" stroke-width="2.5"/>
+        <circle cx="245" cy="148" r="8" fill="#3A4452"/>
+        <rect x="30" y="136" width="280" height="4" fill="#C79C5A"/>
       </svg>
     </div>
   </div>
@@ -157,53 +156,40 @@ footer a{color:#fff}
 <section id="services">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="kicker">Services</div>
-      <h2>Everything your yard needs</h2>
-      <p>One crew, one schedule — mowing through full clean-ups, all handled.</p>
+      <div><div class="kicker">Services</div><h2>Detail work, done right</h2></div>
     </div>
-    <div class="svc-grid">
-      <div class="svc reveal">
-        <div class="leaf-ic"><svg viewBox="0 0 24 24"><path d="M4 17h16M6 17l2-9h8l2 9M4 21h16"/></svg></div>
-        <h3>Weekly &amp; Biweekly Mowing</h3>
-        <p>Crisp, even cuts on a reliable schedule — gates closed, clippings cleaned up, every single visit.</p>
-      </div>
-      <div class="svc reveal">
-        <div class="leaf-ic"><svg viewBox="0 0 24 24"><path d="M5 19c5-1 12-1 14 0M8 15c4-4 8-4 12 0"/></svg></div>
-        <h3>Edging &amp; Trimming</h3>
-        <p>Sharp edges along walks, driveways, and beds — the detail that makes a yard look professionally kept.</p>
-      </div>
-      <div class="svc reveal">
-        <div class="leaf-ic"><svg viewBox="0 0 24 24"><path d="M12 4c-5 4-7 9-4 14M12 4c5 4 7 9 4 14M12 4v16"/></svg></div>
-        <h3>Mulch &amp; Bed Refresh</h3>
-        <p>Fresh mulch in garden beds for instant curb appeal — and healthier soil underneath it.</p>
-      </div>
-      <div class="svc reveal">
-        <div class="leaf-ic"><svg viewBox="0 0 24 24"><path d="M12 3v12M8 8l4 4 4-4M4 21h16"/></svg></div>
-        <h3>Leaf Removal</h3>
-        <p>Fall leaf season doesn't stand a chance. We clear, bag, and haul — lawn left clean underneath.</p>
-      </div>
-      <div class="svc reveal">
-        <div class="leaf-ic"><svg viewBox="0 0 24 24"><path d="M4 12c4-6 12-6 16 0M4 12c4 6 12 6 16 0"/></svg></div>
-        <h3>Hedge &amp; Shrub Trimming</h3>
-        <p>Overgrown hedges shaped back neatly so your whole property looks cared for, not forgotten.</p>
-      </div>
-      <div class="svc reveal">
-        <div class="leaf-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></div>
-        <h3>Spring &amp; Fall Clean-ups</h3>
-        <p>Seasonal reset visits: sticks, debris, and overgrowth cleared so the yard starts each season fresh.</p>
-      </div>
+    <div class="svc-list">
+      <div class="svc-row reveal"><div class="num">01</div><div><h3>Exterior <span class="t">Hand Wash</span></h3><p>Two-bucket hand wash, wheels and tires dressed, streak-free windows — no swirl marks, ever.</p></div></div>
+      <div class="svc-row reveal"><div class="num">02</div><div><h3>Interior <span class="t">Deep Clean</span></h3><p>Seats, carpets, and crevices vacuumed and shampooed; dash, console, and trim detailed and conditioned.</p></div></div>
+      <div class="svc-row reveal"><div class="num">03</div><div><h3>Wax &amp; <span class="t">Paint Sealant</span></h3><p>Machine polish plus a durable sealant layer — deep gloss and real protection against Florida sun and salt.</p></div></div>
+      <div class="svc-row reveal"><div class="num">04</div><div><h3>Ceramic <span class="t">Coating</span></h3><p>Long-term ceramic protection for paint that beads water for years and washes easier.</p></div></div>
+      <div class="svc-row reveal"><div class="num">05</div><div><h3>Engine Bay <span class="t">Detailing</span></h3><p>Careful degrease and dressing of the engine bay — clean enough for a buyer to fall in love with.</p></div></div>
+      <div class="svc-row reveal"><div class="num">06</div><div><h3>Headlight <span class="t">Restoration</span></h3><p>Cloudy, yellowed lenses polished crystal clear — better night visibility and a newer-looking front end.</p></div></div>
     </div>
   </div>
 </section>
 
-<section>
+<section id="packages">
   <div class="wrap">
-    <div class="strip reveal">
-      <div>
-        <h2>Spring rush fills fast — get on the schedule now.</h2>
-        <p>Free estimates, friendly service, and a yard that stays the best-looking on the block. Tell us about your property and we'll quote it within a day.</p>
+    <div class="sec-head reveal">
+      <div><div class="kicker">Simple choices</div><h2>Pick your level of clean</h2></div>
+    </div>
+    <div class="pkg-grid">
+      <div class="pkg reveal">
+        <h3>The Refresh</h3><div class="sub">Maintenance clean</div>
+        <ul><li>Exterior hand wash &amp; dry</li><li>Wheels, tires &amp; windows</li><li>Interior vacuum &amp; wipe-down</li><li>Door jambs cleaned</li></ul>
+        <a class="pkg-cta" href="tel:+13058048810">Call for pricing</a>
       </div>
-      <a class="cta-btn" href="#contact">Get a Free Quote →</a>
+      <div class="pkg mid reveal">
+        <h3>The Deluxe</h3><div class="sub">Our most popular</div>
+        <ul><li>Everything in The Refresh</li><li>Carpet &amp; seat shampoo</li><li>Leather cleaned &amp; conditioned</li><li>Spray wax &amp; tire shine</li><li>Odor treatment</li></ul>
+        <a class="pkg-cta" href="tel:+13058048810">Call for pricing</a>
+      </div>
+      <div class="pkg reveal">
+        <h3>Showroom</h3><div class="sub">Full transformation</div>
+        <ul><li>Everything in The Deluxe</li><li>Machine polish &amp; sealant</li><li>Engine bay detail</li><li>Headlight restoration</li></ul>
+        <a class="pkg-cta" href="tel:+13058048810">Call for pricing</a>
+      </div>
     </div>
   </div>
 </section>
@@ -211,14 +197,13 @@ footer a{color:#fff}
 <section id="why">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="kicker">Why Ramos</div>
-      <h2>Why neighbors choose us</h2>
+      <div><div class="kicker">Why Deluxe</div><h2>Why drivers choose us</h2></div>
     </div>
-    <div class="why-row">
-      <div class="why-card reveal"><div class="dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></div><h3>Always on schedule</h3><p>Your mow day is your mow day — rain or shine, we communicate and keep the routine.</p></div>
-      <div class="why-card reveal"><div class="dot"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-11a7 7 0 0 1 14 0c0 6.5-7 11-7 11z"/></svg></div><h3>Local Bucks County crew</h3><p>We know Yardley lawns, soil, and seasons — because we live and work here.</p></div>
-      <div class="why-card reveal"><div class="dot"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div><h3>Clean-up included</h3><p>Clippings, edges, and walkways tidied every visit — never left looking half-done.</p></div>
-      <div class="why-card reveal"><div class="dot"><svg viewBox="0 0 24 24"><path d="M4 10h16v4H4zM6 10V7a6 6 0 0 1 12 0v3"/></svg></div><h3>Straightforward pricing</h3><p>Free estimates and honest seasonal rates. No surprise add-ons, no contracts you can't leave.</p></div>
+    <div class="why-grid">
+      <div class="why reveal"><h3>We come to you</h3><p>Home, office, or driveway — fully equipped mobile service across Palm Beach County. You never wait in a lobby.</p></div>
+      <div class="why reveal"><h3>Paint-safe methods</h3><p>Proper two-bucket washes, clean microfiber, and the right products — your paint stays swirl-free.</p></div>
+      <div class="why reveal"><h3>Detailer-grade products</h3><p>Professional chemicals and sealants, not gas-station soap. The difference shows in the gloss and how long it lasts.</p></div>
+      <div class="why reveal"><h3>Upfront quotes</h3><p>Text or call with your vehicle and what you need — you'll get a straight price before we ever touch the car.</p></div>
     </div>
   </div>
 </section>
@@ -226,42 +211,45 @@ footer a{color:#fff}
 <section id="area">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="kicker">Service area</div>
-      <h2>Proudly serving Lower Bucks County</h2>
-      <p>Based in Yardley — mowing routes run through these towns every week.</p>
+      <div><div class="kicker">Service area</div><h2>Mobile across the county</h2></div>
     </div>
-    <div class="town-chips reveal">
-      <span class="home">Yardley</span><span>Morrisville</span><span>Levittown</span><span>Newtown</span><span>Langhorne</span><span>Trevose</span><span>Fairless Hills</span>
+    <p class="reveal" style="color:var(--gray);font-weight:300;max-width:38rem">We bring the detail shop to your driveway anywhere in Palm Beach County.</p>
+    <div class="towns reveal">
+      <span class="home">Palm Beach County</span><span>West Palm Beach</span><span>Boca Raton</span><span>Delray Beach</span><span>Boynton Beach</span><span>Lake Worth</span><span>Wellington</span><span>Jupiter</span>
     </div>
   </div>
 </section>
 
 <section id="contact">
   <div class="wrap">
-    <div class="contact-grid reveal">
-      <div class="contact-info">
-        <h3>Get your free quote</h3>
-        <p><strong>Email:</strong><br><a href="mailto:ramoslandscapingdesign@gmail.com">ramoslandscapingdesign@gmail.com</a></p>
-        <p><strong>Location:</strong><br>Yardley, Pennsylvania</p>
+    <div class="sec-head reveal">
+      <div><div class="kicker">Book now</div><h2>Get your free quote</h2></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p><strong>Call or text:</strong><br><a href="tel:+13058048810">(305) 804-8810</a></p>
+        <p><strong>Email:</strong><br><a href="mailto:deluxedetaling01@gmail.com">deluxedetaling01@gmail.com</a></p>
+        <p><strong>Area:</strong><br>Palm Beach County, Florida</p>
         <p><strong>Hours:</strong><br>Mon–Sat, 8am–6pm</p>
-        <p>Tell us your address and what the yard needs — most quotes go out within one business day.</p>
+        <p>Tell us your vehicle and what it needs — most quotes go out the same day.</p>
       </div>
-      <form class="quote" onsubmit="return sendQuote(event)">
+      <form class="quote reveal" onsubmit="return sendQuote(event)">
         <label for="qn">Your name</label>
         <input id="qn" name="name" required placeholder="Your full name">
         <label for="qp">Phone</label>
-        <input id="qp" name="phone" type="tel" placeholder="Your phone number">
+        <input id="qp" name="phone" type="tel" required placeholder="Your phone number">
         <label for="qs">Service needed</label>
         <select id="qs" name="service">
-          <option>Weekly / biweekly mowing</option>
-          <option>Edging &amp; trimming</option>
-          <option>Mulch &amp; bed refresh</option>
-          <option>Leaf removal</option>
-          <option>Hedge &amp; shrub trimming</option>
-          <option>Spring / fall clean-up</option>
+          <option>Exterior hand wash</option>
+          <option>Interior deep clean</option>
+          <option>Wax &amp; paint sealant</option>
+          <option>Ceramic coating</option>
+          <option>Engine bay detailing</option>
+          <option>Headlight restoration</option>
+          <option>Full detail package</option>
         </select>
-        <label for="qm">Tell us about your yard</label>
-        <textarea id="qm" name="message" placeholder="Your address, yard size, anything overgrown…"></textarea>
+        <label for="qm">Vehicle &amp; details</label>
+        <textarea id="qm" name="message" placeholder="Year, make, model — and what you'd like done…"></textarea>
         <button class="cta-btn" type="submit" style="width:100%">Send Quote Request</button>
       </form>
     </div>
@@ -269,7 +257,7 @@ footer a{color:#fff}
 </section>
 
 <footer>
-  Ramos Lawn Care Service · Yardley, PA · <a href="mailto:ramoslandscapingdesign@gmail.com">ramoslandscapingdesign@gmail.com</a>
+  Deluxe Detailing · Palm Beach County, FL · <a href="tel:+13058048810">(305) 804-8810</a> · <a href="mailto:deluxedetaling01@gmail.com">deluxedetaling01@gmail.com</a>
   <div class="credit">Demo by Wahab Codes</div>
 </footer>
 
@@ -281,7 +269,7 @@ function sendQuote(e){
       s=document.getElementById('qs').value,
       m=document.getElementById('qm').value;
   var body="Name: "+n+"%0D%0APhone: "+p+"%0D%0AService: "+encodeURIComponent(s)+"%0D%0A%0D%0A"+encodeURIComponent(m);
-  window.location.href="mailto:ramoslandscapingdesign@gmail.com?subject="+encodeURIComponent("Free Quote Request — "+n+" ("+s+")")+"&body="+body;
+  window.location.href="mailto:deluxedetaling01@gmail.com?subject="+encodeURIComponent("Free Quote Request — "+n+" ("+s+")")+"&body="+body;
   return false;
 }
 var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
